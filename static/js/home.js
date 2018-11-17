@@ -158,7 +158,6 @@ ns.controller = (function (m, v) {
 
         if (validate(fname, lname)) {
             model.create(fname, lname);
-            location.reload(true);
         } else {
             alert('Problem with first or last name input');
         }
