@@ -155,7 +155,7 @@ ns.controller = (function (m, v) {
             lname = $lname.val();
 
         e.preventDefault();
-
+        document.location.reload(true);
         if (validate(fname, lname)) {
             model.create(fname, lname);
         } else {

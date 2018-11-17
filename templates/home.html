@@ -20,13 +20,21 @@
         <div class="section editor">
             <h3>Input People</h3>
             <br>
-            <label for="fname">First Name :
+            <!-- <label for="fname">First Name :
                 <input id="fname" type="text" />
-            </label>
-            <br />
+            </label> -->
+    
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Enter</span>
+                </div>
+                <input id="fname" type="text" placeholder="First Name" aria-label="First name" class="form-control">
+                <input id="lname" type="text" placeholder="Last Name" aria-label="Last name" class="form-control">
+            </div>
+            <!-- <br />
             <label for="lname">Last Name :
                 <input id="lname" type="text" />
-            </label>
+            </label> -->
             <br />
             <button class="btn btn-success" id="create">Create</button>
             <button class="btn btn-info" id="update">Update</button>

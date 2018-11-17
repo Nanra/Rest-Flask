@@ -16,19 +16,19 @@ def get_timestamp():
 
 # Data to serve with our API
 PEOPLE = {
-    "Farrell": {
-        "fname": "Doug",
-        "lname": "Farrell",
+    "Raka": {
+        "fname": "Raka",
+        "lname": "Ferguso",
         "timestamp": get_timestamp(),
     },
-    "Brockman": {
-        "fname": "Kent",
-        "lname": "Brockman",
+    "Yuda": {
+        "fname": "Yuda",
+        "lname": "Dora",
         "timestamp": get_timestamp(),
     },
-    "Easter": {
-        "fname": "Bunny",
-        "lname": "Easter",
+    "Andre": {
+        "fname": "Riyadi",
+        "lname": "Tasikpunya",
         "timestamp": get_timestamp(),
     },
 }
@@ -89,7 +89,7 @@ def create(person):
     else:
         abort(
             406,
-            "Peron with last name {lname} already exists".format(lname=lname),
+            "Person with name {fname} {lname} already exists".format(fname=fname, lname=lname),
         )
 
 
