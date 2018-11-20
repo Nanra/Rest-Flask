@@ -5,7 +5,12 @@
 instance/*
 !instance/.gitignore
 .webassets-cache
-.vscode
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 ### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
